@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+
+/* *{
+  font-family:"Roboto";
+} */
+
+@theme{
+  --color-primary: #669bbc;
+  --my-grid-cols:repeat(auto-fill,minmax(200px,1fr));
+}
+
+.active hr{
+  @apply block
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+@media (max-width:740px) {
+  .active p{
+    @apply text-white bg-primary
+  }
+}
